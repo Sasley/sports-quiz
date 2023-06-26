@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    background-color: tan;
+}
+
+.body {
+    size: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: gray;
+}
+.start-button {
+    font-size: medium;
+    height: auto;
+}

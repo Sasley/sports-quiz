@@ -1,2 +1,14 @@
 # sports-quiz
-Code Quiz- sports
+Sports quiz is a multiple choice game about naming a sports team to its logo.
+## Usage
+Html
+Css
+Javascript
+### Displays
+Count down timer
+Button use after activation
+Reset option
+High score results
+#### Screenshot
+
+

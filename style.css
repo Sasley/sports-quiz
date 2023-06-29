@@ -1,15 +1,19 @@
 * {
     box-sizing:content-box;
-    padding-bottom: 1%;
     background-color: rgb(237, 203, 160);
 
 }
 
-.body {
+body {
     size: 20px ;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+::selection {
+  color: black;
+  background: #f4511e;
 }
 
 .start-button {
@@ -21,34 +25,31 @@
     cursor:grab;
     padding: 20px 52px;
     text-align: justify;
-    /* transition-duration: 0.15s;
-    transition-property: background-color;
-    transition-timing-function: linear; */
 }
-. section {
-    container-type: normal;
-}
+
 . h2 {
-    display: block;
-    border-style:solid ;
+    display: flex;
+    border-style:solid;
+    width: 200px;
+    height:40px;
+      
 }
 . timer {
-    border-inline-style: solid;
-    margin: 10px ;
+  
+    
 }
 p {
+  
     
 }
 
 . timer-count {
-    display: block;
-    height: 40px;
-    padding: 10px;
-    background:red;
-    text-align: center;
-
-
+  width: 200px;
+  height:40px;
+  display:flex;
+    
 }
+
 . High scores {
 
 }
@@ -58,6 +59,28 @@ p {
 . loses {
 
 }
+.Questions.activeQuestions,
+.Options.activeOptions,
+.result.activeResults {
+  width: 500px;
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate((50%, -50%)scale(1));
+  background:red;
+    text-align: center;
+    border-inline-style: solid;
+    margin: 10px ;
+    background: #f4511e;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+}
+
+
+
+
+
 . reset-button {
     font-size: 3.0em;
     width: 120px;
@@ -69,41 +92,14 @@ p {
     text-align: justify;
 }
 .button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
+  font-size: 3.0em;
+    height: 40px;
+    background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,96,33,0.9542191876750701) 100%);
+    border: bolder;
+    color: darkgreen;
+    cursor:grab;
+    padding: 20px 52px;
+    text-align: justify;
   }
   
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+ 

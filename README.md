@@ -11,4 +11,8 @@ Reset option
 High score results
 #### Screenshot
 
+##### Resources
+YouTube
+W3 schools
+portfolio
 

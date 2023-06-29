@@ -1,7 +1,6 @@
 const start_btn = document.querySelectorAll(".start_btn button");
 const timer = document.querySelectorAll(".timer");
 const time_left_txt = document.querySelectorAll(timer.section);
-const timer_sec = document.querySelectorAll(.timer. section);
 var timerEl = document.getElementById('time-left');
 var mainEl = document.getElementById('aside');
 
@@ -25,6 +24,7 @@ let questions = [
   {
     numb:1,
     question: "What team mascot is bird name Swoop?",
+    
     answer: Philadelphia 'Eagles',
     options: [
       "Philadelphia 'Eagles'",
